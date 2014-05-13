@@ -53,6 +53,8 @@ class Controller
 	 */
 	function __destruct()
 	{
-		$this->_template->render();
+		if ($this->_template) {
+			$this->_template->render();
+		}
 	}
 }
