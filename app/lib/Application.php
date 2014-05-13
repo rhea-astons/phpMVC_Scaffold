@@ -36,7 +36,7 @@ class Application
 		if (class_exists($this->_controller) && method_exists($this->_controller, $this->_action)) {
 			$this->_controller = new $this->_controller($this->_classRef, $this->_action);
 			if (isset($this->_param3)) {
-				$this->_controller->index($this->_param1, $this->_param2, $this->_param3);
+				$this->_controller->{$this->_action}($this->_param1, $this->_param2, $this->_param3);
 			} elseif (isset($this->_para2)) {
 				$this->_controller->{$this->_action}($this->_param1, $this->_param2);
 			} elseif (isset($this->_param1)) {
