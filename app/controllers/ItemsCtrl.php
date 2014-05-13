@@ -22,12 +22,16 @@ class ItemsCtrl extends Controller
 
 
 	/**
-	 * View All items
+	 * View item by id
 	 */
-	public function viewall()
+	public function view($id)
 	{
-		$this->set('title', 'All items');
-		$items = $this->_model->getAll();
-		$this->set('items', $items);
+		$item = $this->_model->getById($id);
+		if($item) {
+			$this->set('title', 'Item ' . $id);
+			$this->set('item', $item);
+		} else {
+			header('Location: /items');
+		}
 	}
 }

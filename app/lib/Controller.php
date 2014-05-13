@@ -30,7 +30,7 @@ class Controller
 		$this->_model = ucwords($this->_model);
 
 		// Load model
-		$this->_model = new $this->_model();
+		$this->_model = new $this->_model($this->_classRef);
 
 		// Load template
 		$this->_template = new Template($this->_classRef, $this->_action);

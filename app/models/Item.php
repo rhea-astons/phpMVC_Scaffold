@@ -10,12 +10,5 @@
  */
 class Item extends Model
 {
-	/**
-	 * Returns all items
-	 * @return array
-	 */
-	public function getAll()
-	{
-		return array('item1', 'item2', 'item3');
-	}
+	
 }

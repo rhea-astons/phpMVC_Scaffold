@@ -8,6 +8,7 @@ define('APP_NAME', 'myApp');
 define('APP_VERSION', '0.0.1');
 
 // Database settings
+define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'myAppDB');
 define('DB_USER', 'user');
