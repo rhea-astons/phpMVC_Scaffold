@@ -3,6 +3,7 @@
 // Set some usefull constants
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', $_SERVER['DOCUMENT_ROOT']);
+define('URL', 'http://' . $_SERVER['HTTP_HOST'] . '/');
 set_include_path( get_include_path() . PATH_SEPARATOR . ROOT);
 
 // Load config

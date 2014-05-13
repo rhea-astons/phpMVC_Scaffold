@@ -7,5 +7,6 @@
 <head>
     <title><?php echo $title; ?></title>
     <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/style.css">
 </head>
 <body>
